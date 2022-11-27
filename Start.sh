@@ -72,7 +72,9 @@ EOF
                                 sleep 1
                                  fi
                                 # run start up script
-                                echo "Lark is starting now $userName"; sleep 1
+                                echo "Lark is starting now $userName"
+                                printf "\n\nPress any key to continue"
+                                read -n 1
                                 #source ./someLarkStartScript
                                 break
                                 ;;
