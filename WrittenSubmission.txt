@@ -1,0 +1,32 @@
+~~~ NOT FINISHED ~~~~
+Written submission in Canvas (do not add this to .tgz)
+Submit a word or pdf document that contains:
+
+
+Name of game: Long Way from Home
+Name of developers: Elaine Lee, Jacob Miller, and Samantha Bentley
+Target age: 11-18 y.o.
+Narrative (back story – 1 paragraph min):
+
+Instructions (how to play the game):
+
+Identify how your game supports these elements in a bulleted list:
+o Purpose: Teach Unix while exploring that __ world
+o Constraints: 
+o Conflict: 
+o Intrinsic and/or extrinsic rewards: 
+o Chance: 
+o Growth: 
+o Winner: 
+
+ List of concepts and skills learned (8 minimum):
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+
+ Misc.
