@@ -1,7 +1,12 @@
 instructions
 
-lore
+As you proceed through the first corridor, a memory hits you...
 
-tell user to ls
+Your taken back to the first time you've encountered the S.T.O.N.E represesntaitives. You nad the rest of your fellow legion of mercenaries agreed to
+a meeting between the parties to achieve some "mutual benefit." The job was simple. Get in, get the stones, get out. Simple and easy money. It was all promising at
+first, in hindsight a little too promising. A deal was made, and there began the partnership of The Night Raid Mercenaries and S.T.O.N.E Corp. Litttle did I know how
+trivial this parnership would turn out...
+
+Use the ls command to look around the corridor room
 
 
