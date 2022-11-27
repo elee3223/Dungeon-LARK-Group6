@@ -6,18 +6,18 @@ echo ""
 if [ $# -eq 1 ]
 then
 	if [ $(grep "potion" $1 | wc -l) -gt 1 ]
-		then echo "you picked up too many potions, and your backpack might break. remove one with sed -i ''0,/item/{/item/d;}'' inventory"
+		then echo "you picked up too many potions, and your backpack might break. remove one with sed -i '/item/d' inventory"
 		else
 		for i in $(cat ${1})
        		 do
-                if [ "$i" != "fire-amulet" ]
+                if [ "$i" != "grass-amulet" ]
                         then echo "hmm...the door won't open for the $i"
 			sleep 1
                 else
-                        echo "the fire amulet's power unlocked the door! you can now move onto the next area. Move onto .room_2."
+                        echo "the grass amulet's power unlocked the door! you can now move onto the next area. Move onto .room_3."
 			echo ""
 			break
-                        cp $1 ./.room_2/inventory
+                        cp $1 ./.room_3/inventory
                 fi
 
       		  done
@@ -28,3 +28,4 @@ elif [ $# -gt 2 ]
 	else
 		exit 1
 fi
+

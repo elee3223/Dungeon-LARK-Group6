@@ -1,56 +1,127 @@
 #!/bin/bash
 
 opponent_hp=25
+my_hp=50
+target="plant boss"
+
+read -p "Before we fight lets open up your bag (type inventory): " bag
+prompt(){
+        cat $bag
+        echo ""
+        read -p "what would you like to use?: " choice
+
+        if [[ "$choice" = *"-amulet" ]]
+                then 
+                        $choice $target $bag
+        elif grep -Fxq $choice "$bag"
+                then
+                        deal_dmg-melee
+        else   
+                echo "you don't have $weapon in your bag!"
+        fi
+}
 
 deal_dmg(){
         declare -a Attack_dmg=(5 6 7 8 9)
         attack=${Attack_dmg[RANDOM%${#Attack_dmg[@]}]}
         ((opponent_hp -= attack))
+        echo ""
         echo "you dealt $attack damage!"
-        if [ $opponent_hp -gt 0 ]
-            then echo the opponent’s hp is now $opponent_hp
-        else  echo the opponent’s hp is now 0
-        fi
+        echo ""
+        
 }
 
-echo "fire plant-boss inventory"
+deal_dmg-melee(){
+        declare -a Attack_dmg=(1 2 3 4 5)
+        attack=${Attack_dmg[RANDOM%${#Attack_dmg[@]}]}
+        ((opponent_hp -= attack))
+        echo ""
+        echo "you dealt $attack damage!"
+        echo ""
+        
+}
+
+opp-move() {
+
+        declare -a Attack_dmg=(8 9 10 11 12)
+        attack=${Attack_dmg[RANDOM%${#Attack_dmg[@]}]}
+        ((my_hp -= attack))
+        echo ""
+        echo "the boss is attacking"
+        echo "you got dealt $attack damage!"
+        echo ""
+      
+
+}
+
 echo""
 
-fire() {
- if [[ "$1" = "plant-boss" ]]
+
+fire-amulet() {
+ if [[ "$1" = *"plant"* ]]
          then
-                 if grep -Fxq "fire-amulet" "$2"
+                 if grep -Fxq "fire-amulet" "$bag"
                  then
                         deal_dmg
         	else
 			echo "you can't use fire!"
 		 fi
          else
-                 echo "theres nothing to use fire against"
+                 echo "fire is ineffective"
+ fi
+ }
+
+
+water-amulet() {
+ if [[ "$1" = *"fire"* ]]
+         then
+                 if grep -Fxq "water-amulet" "$2"
+                 then
+                        deal_dmg
+        	else
+			echo "you can't use water!"
+		 fi
+         else
+                 echo "water is ineffective"
  fi
  }
 
 until [ $opponent_hp -le 0 ]
-do
-        read -p "" input
-        if [[ "$input" = *"fire"* ]]
-        then
-		fire plant-boss inventory
+ do
+        echo "========================================="
+
+        prompt
+
+        opp-move
+
+        if [ $opponent_hp -gt 0 ]
+            then echo the opponent’s hp is now $opponent_hp
+                echo ""
+        else  echo the opponent’s hp is now 0
+        fi
+
+          if [ $my_hp -gt 0 ]
+            then echo your hp is now $my_hp
+                echo ""
+        else  echo the your hp is now 0
+                echo "you died! Returning to the home menu... "
+                cd ../../../../.
+                exit 1
+
+        fi
+
                 if [ $opponent_hp -le 0 ]
                         then
-                                echo "you beat the boss! proceed to the door. if you can't open it, try using less door"
+                                echo "you beat the boss! the hidden door has revealed itself. cat .door"
                                 echo ""
+                                mv $bag .corridor_3/inventory
                                 exit 1
                 fi
                 echo "keep fighting"
                 echo ""
-        fi
+        echo "========================================="
 
-done
+ done
 
-if [ $opponent_hp -le 0 ]
-        then
-                echo "you put out the wall of fire! proceed to the door. if you can't open it, try using less door"
-                echo ""
-fi
+
 

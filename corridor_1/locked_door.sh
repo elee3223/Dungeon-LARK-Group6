@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "locked door. needs special item to unlock.Look through your inventory by putting it as an argument"
-
+echo "./locked_door.sh inventory"
 
 if [ $# -eq 1 ]
 then

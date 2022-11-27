@@ -2,5 +2,5 @@ instructions
 
 theres a wall of fire blocking your path
 
-use ./fight water ( fire-wall ) to fight the fire
+use ./fight.sh to fight the fire
 
