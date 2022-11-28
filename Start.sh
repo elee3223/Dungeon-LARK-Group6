@@ -54,21 +54,23 @@ EOF
                                  echo " Welcome to Lark" 
                                  echo ""
 
-                                echo "let's make a backpack! Make a file by typing touch inventory"
+                                echo "Let's make a backpack! Make a file by typing,   \$ touch inventory"
 
                                 read -p "" bag
                                 while [ "$bag" != "touch inventory" ]
                                 do
-                                        echo "That's not the right syntax, try again"
+                                        echo "That's not the right syntax, try again!"
                                         read -p "" bag
                                 done
 
                                 touch inventory
 
-                                echo "type cat dungeon to see your surroundings as your proceed through the dungeon."
-
-                                echo "let's enter the dungeon! we will be moving through by changing directories, or cd. cd to corridor_1"
-                                echo "make sure to bring your backpack with you! mv inventory corridor_1/inventory"   
+                                echo "Now let's enter the dungeon!"
+                                echo "To see your surroundings as your proceed through the dungeon type,    \$ cat dungeon"
+                                echo "We will be moving through by changing directories, or cd."
+                                echo "HINT: \$ cd corridor_1"
+                                echo "make sure to bring your backpack with you!"
+                                echo "HINT: mv inventory corridor_1/inventory"   
                                 sleep 1
                                 printf "\n\nPress any key to continue"
                                 read -n 1
