@@ -70,6 +70,8 @@ EOF
                                 echo "let's enter the dungeon! we will be moving through by changing directories, or cd. cd to corridor_1"
                                 echo "make sure to bring your backpack with you! mv inventory corridor_1/inventory"   
                                 sleep 1
+                                printf "\n\nPress any key to continue"
+                                read -n 1
                                  fi
                                 # run start up script
                                 echo "Lark is starting now $userName"
