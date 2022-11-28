@@ -74,7 +74,6 @@ EOF
                                  fi
                                 # run start up script
                                 echo "Lark is starting now $userName"; sleep 1
-                                #source ./someLarkStartScript
                                 break
                                 ;;
                         0)  break
