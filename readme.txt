@@ -71,4 +71,9 @@ Instructions:
        cat read____ [the blank spot will be filled with the location]
        ~>this will read the prompt for each room
 ###################################################################
+' chmod '
+       change access permissions
+     Ex:
+       chmod u+x ____ [.sh file]
+       ~> this will bypass permition denied 
 Use the information you learn to advance through the dungeon, and have fun!!!!
