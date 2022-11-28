@@ -3,30 +3,120 @@ Written submission in Canvas (do not add this to .tgz)
 Submit a word or pdf document that contains:
 
 
-Name of game: Long Way from Home
-Name of developers: Elaine Lee, Jacob Miller, and Samantha Bentley
+Name of game: The Dungeon
+Developed by: Elaine Lee, Jacob Miller, and Samantha Bentley
 Target age: 11-18 y.o.
 Narrative (back story – 1 paragraph min):
-
+You area a mercenary that is part of a group called Night Raid hired to assist the S.T.O.N.E corporation acquire some elemental stones for a sizeable reward. However, things turn south once they are found, as the henchmen of the corporation are ordered to kill the night raid members assisting them. All perish except the player, the lone survivor, who's now tasked with avenging his bretheren and obtaining these elemental stones from S.T.O.N.E before they can do whatever dastardly plan they intend on using them for.
 Instructions (how to play the game):
+` ./ `
+      The '.' means don't move, and the name of the script makes the code run.
+      this works because it is running them as a shell script.
+    Ex:
+      ./______ [the blank spot will be filled with the item]
+      ~>this will help you inpect and use your surroundings
+###################################################################
+' pwd ' :
+       PWD stores the path of the current directory.
+    Ex: 
+       pwd   [just that]
+       ~>this will show you where you are
 
+###################################################################
+Add to your inventory
+       Ex:
+        echo "[name]" >> inventory
+
+###################################################################
+' cd ' :
+       cd stands for change directory
+       this will move you foward into other directories
+     Ex: 
+        cd ______ [new location]
+        ~>this will move to to the new location
+` cd .. `:
+         previous directory command
+         this brings you back a directory
+     Ex:
+         cd ..
+         ~> this brings you to the previous room
+###################################################################
+' ls ' :
+       ls is short for list
+       this command lists directory contents
+     Ex: 
+        ls   [just that]
+        ~>this will list out your surroundings
+  >>>'-p' 
+       adds a slash ( / ) after each directory file
+           Ex: 
+              ls -p
+              ~>a '/' will be added to the rooms
+###################################################################
+' cat ' :
+       cat is short for concatenate
+       this command displays the contents of files without 
+       editing them. It is used to create the file with content
+    Ex: 
+       cat read____ [the blank spot will be filled with the location]
+       ~>this will read the prompt for each room
+###################################################################
+' chmod '
+       change access permissions
+     Ex:
+       chmod u+x ____ [.sh file]
+       ~> this will bypass permition denied 
+       
+###################################################################
+' mv ' 
+      mv stands for move
+      moves files and directories from one-place to another
+    Ex:
+      mv [obj] [place]/[obj]
+###################################################################
+' touch ' 
+      It is used to create a file without any content.
+    Ex:
+      touch [file_name]
+###################################################################
 Identify how your game supports these elements in a bulleted list:
-o Purpose: Teach Unix while exploring that __ world
-o Constraints: 
-o Conflict: 
-o Intrinsic and/or extrinsic rewards: 
-o Chance: 
-o Growth: 
-o Winner: 
+o Purpose: Teach  begginer Unix skills while exploring our unique world
+o Constraints: Challenges the user to find objects before they can continue.
+o Conflict: Lockdoors, bosses, and hidden pathways
+o Intrinsic and/or extrinsic rewards: Potions and Treasure
+o Chance: Treasure chest, and damage score
+o Growth: Learning Unixs commands, Lore, and Inventory 
+o Winner: Beat the Boss and Learn Unix
 
  List of concepts and skills learned (8 minimum):
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
+1. Change access permissions
+2. Change directory
+3. Lists directory contents
+4. Previous directory command
+5. List with directory added slashes ( / ) after each directory file
+6. Check current directory
+7. Add to text files
+8. Parses and transforms text
 
  Misc.
+    _________________________________________________________
+ /|     -_-                                             _-  |\
+/ |_-_- _                                         -_- _-   -| \   
+  |                            _-  _--                      | 
+  |                            ,                            | ╱╭╮╭╮╱╱╱╱╱╱╱╭╮
+  |      .-'````````'.        '(`        .-'```````'-.      | ╭╯╰┫┃╱╱╱╱╱╱╱┃┃
+  |    .` |           `.      `)'      .` |           `.    | ╰╮╭┫╰━┳━━╮╭━╯┣╮╭┳━╮╭━━┳━━┳━━┳━╮         
+  |   /   |   ()        \      U      /   |    ()       \   | ╱┃╰┫┃┃┃┃━┫┃╰╯┃╰╯┃┃┃┃╰╯┃┃━┫╰╯┃┃┃┃
+  |  |    |    ;         | o   T   o |    |    ;         |  | ╱╰━┻╯╰┻━━╯╰━━┻━━┻╯╰┻━╮┣━━┻━━┻╯╰╯
+  |  |    |     ;        |  .  |  .  |    |    ;         |  | ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━╯┃
+  |  |    |     ;        |   . | .   |    |    ;         |  | ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━━╯
+  |  |    |     ;        |    .|.    |    |    ;         |  |
+  |  |    |____;_________|     |     |    |____;_________|  |  
+  |  |   /  __ ;   -     |     !     |   /     `'() _ -  |  |
+  |  |  / __  ()        -|        -  |  /  __--      -   |  |
+  |  | /        __-- _   |   _- _ -  | /        __--_    |  |
+  |__|/__________________|___________|/__________________|__|
+ /                                             _ -           \
+/   -_- _ -             _- _---                       -_-  -_ \
+    _                                    
+
