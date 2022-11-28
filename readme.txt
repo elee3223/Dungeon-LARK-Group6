@@ -39,8 +39,8 @@ Instructions:
        ~>this will show you where you are
 ###################################################################
 ' cd ' :
-       ls is short for list
-       this command lists directory contents
+       cd is short for change directory
+       this command will move to typed directory
      Ex: 
         cd ______ [new location]
         ~>this will move to to the new location
