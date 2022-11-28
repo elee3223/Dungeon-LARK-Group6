@@ -1,7 +1,8 @@
 
 instructions
 
-tell user: gawk 'BEGIN {srand()}; rand() < 0.03 {print $1}' .chest
+Looking around the room you find a treasure chest, whats inside? To open, use the following gawk command:
+gawk 'BEGIN {srand()}; rand() < 0.03 {print $1}' .chest
 
 to add, echo "item" >> inventory
 to see inventory, cat inventory
