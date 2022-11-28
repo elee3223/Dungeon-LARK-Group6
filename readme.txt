@@ -32,15 +32,21 @@ Instructions:
       ~>this will help you inpect and use your surroundings
 ###################################################################
 ' pwd ' :
-       pwd is short for ...
-       this ...
+       PWD stores the path of the current directory.
     Ex: 
        pwd   [just that]
        ~>this will show you where you are
 ###################################################################
+
+###################################################################
+Add to your inventory
+       Ex:
+        echo "[name]" >> inventory
+
+###################################################################
 ' cd ' :
-       ls is short for list
-       this command lists directory contents
+       cd stands for change directory
+       this will move you foward into other directories
      Ex: 
         cd ______ [new location]
         ~>this will move to to the new location
