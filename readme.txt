@@ -66,7 +66,7 @@ Instructions:
 ' cat ' :
        cat is short for concatenate
        this command displays the contents of files without 
-       editing them
+       editing them. It is used to create the file with content
     Ex: 
        cat read____ [the blank spot will be filled with the location]
        ~>this will read the prompt for each room
@@ -76,4 +76,18 @@ Instructions:
      Ex:
        chmod u+x ____ [.sh file]
        ~> this will bypass permition denied 
+       
+###################################################################
+' mv ' 
+      mv stands for move
+      moves files and directories from one-place to another
+    Ex:
+      mv [shell] [place]/[shell]
+###################################################################
+' touch ' 
+      mv stands for move
+      It is used to create a file without any content.
+    Ex:
+      touch [file_name]
+###################################################################
 Use the information you learn to advance through the dungeon, and have fun!!!!
