@@ -37,8 +37,6 @@ Instructions:
        pwd   [just that]
        ~>this will show you where you are
 ###################################################################
-
-###################################################################
 Add to your inventory
        Ex:
         echo "[name]" >> inventory
