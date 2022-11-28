@@ -2,7 +2,7 @@
 
 opponent_hp=10
 
-echo "water fire-wall inventory"
+echo "input: water fire-wall inventory"
 echo""
 
  water() {
@@ -34,7 +34,7 @@ do
                 water fire-wall inventory 
                 if [ $opponent_hp -le 0 ]
                         then
-                                echo "you put out the wall of fire! proceed to the door. if you can't open it, try using less door"
+                                echo "you put out the wall of fire and mastered the use of water! proceed to the door. if you can't open it, try using less door"
                                 echo ""
                                 exit 1
                 fi

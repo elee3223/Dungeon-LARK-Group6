@@ -1,7 +1,7 @@
 cd to .corridor_2
 to exit, press q
 make sure to bring your backpack with you!
-cp inventory .corridor_2/inventory
+mv inventory .corridor_2/inventory
 
 
 
