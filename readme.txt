@@ -85,7 +85,6 @@ Instructions:
       mv [obj] [place]/[obj]
 ###################################################################
 ' touch ' 
-      mv stands for move
       It is used to create a file without any content.
     Ex:
       touch [file_name]
