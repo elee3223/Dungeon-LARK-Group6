@@ -22,7 +22,7 @@
 
 Name of game: The Dungeon
 Developed by: Elaine Lee, Jacob Miller, and Samantha Bentley
-Narrative: [Insert Lore]
+Narrative: You area a mercenary that is part of a group called Night Raid hired to assist the S.T.O.N.E corporation acquire some elemental stones for a sizeable reward. However, things turn south once they are found, as the henchmen of the corporation are ordered to kill the night raid members assisting them. All perish except the player, the lone survivor, who's now tasked with avenging his bretheren and obtaining these elemental stones from S.T.O.N.E before they can do whatever dastardly plan they intend on using them for.
 Instructions: 
 ` ./ `
       The '.' means don't move, and the name of the script makes the code run.
@@ -39,8 +39,8 @@ Instructions:
        ~>this will show you where you are
 ###################################################################
 ' cd ' :
-       cd is short for change directory
-       this command will move to typed directory
+       ls is short for list
+       this command lists directory contents
      Ex: 
         cd ______ [new location]
         ~>this will move to to the new location
