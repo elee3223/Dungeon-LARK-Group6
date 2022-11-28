@@ -82,7 +82,7 @@ Instructions:
       mv stands for move
       moves files and directories from one-place to another
     Ex:
-      mv [shell] [place]/[shell]
+      mv [obj] [place]/[obj]
 ###################################################################
 ' touch ' 
       mv stands for move
