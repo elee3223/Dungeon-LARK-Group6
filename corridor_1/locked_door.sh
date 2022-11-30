@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "LOCKED DOOR. This needs a special item to unlock. Try looking through your inventory by putting it as an argument"
+echo "LOCKED DOOR. This needs a special item to unlock. Try looking through your inventory by running this script again and putting you inventory as an argument"
+echo
+echo "ex: ./locked_door.sh inventory"
 
 
 if [ $# -eq 1 ]
