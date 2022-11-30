@@ -7,6 +7,14 @@ target="plant boss"
 echo "The vines are starting to move and come to life... It became a monster!"
 
 read -p "Before we fight lets open up your bag (type inventory): " bag
+if test -f $bag
+then echo ""
+else  
+	echo "$2 doesn't seem to be here... did you bring it from the other room?"
+	echo "to return to the other room cd ../."
+	exit 1
+fi
+  
 prompt(){
         cat $bag
         echo ""
