@@ -4,6 +4,8 @@ opponent_hp=25
 my_hp=50
 target="plant boss"
 
+echo "The vines are starting to move and come to life... It became a monster!"
+
 read -p "Before we fight lets open up your bag (type inventory): " bag
 prompt(){
         cat $bag
@@ -82,7 +84,7 @@ water-amulet() {
 			echo "you can't use water!"
 		 fi
          else
-                 echo "water is ineffective"
+                 echo "The vines absorbed your attack... water is ineffective!"
  fi
  }
 
@@ -105,16 +107,16 @@ until [ $opponent_hp -le 0 ]
                 echo ""
         else  echo the your hp is now 0
                 echo "you died! Returning to the home menu... "
-                cd ../../../../.
+                
                 exit 1
 
         fi
 
                 if [ $opponent_hp -le 0 ]
                         then
-                                echo "you beat the boss! the hidden door has revealed itself. cat .door"
+                                echo "You burned down the vines! the hidden door has revealed itself. cat .door"
                                 echo ""
-                                mv $bag .corridor_3/inventory
+                                echo "bring your backpack to .corridor_3/inventory"
                                 exit 1
                 fi
                 echo "keep fighting"
@@ -122,10 +124,4 @@ until [ $opponent_hp -le 0 ]
         echo "========================================="
 
  done
-
-if [ $opponent_hp -le 0 ]
-        then
-                echo "you put out the wall of fire! proceed to the door. if you can't open it, try using less door"
-                echo ""
-fi
 
