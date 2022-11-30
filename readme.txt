@@ -94,3 +94,5 @@ Add to your inventory
       touch [file_name]
 ###################################################################
 Use the information you learn to advance through the dungeon, and have fun!!!!
+
+To start, type ./Start.sh
