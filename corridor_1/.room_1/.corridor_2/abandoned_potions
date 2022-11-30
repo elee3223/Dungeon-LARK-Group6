@@ -6,4 +6,5 @@ potion:healing
 potion:healing
 potion:healing
 
-only add one
+Remember, to add to your bag,
+echo "(your item here)" >> inventory
