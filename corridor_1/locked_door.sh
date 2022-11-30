@@ -14,7 +14,8 @@ then
                         sleep 1
                 else
                         echo "the water amulet's power unlocked the door! you can now move onto the next area. Move onto .room_1."
-			mv $1 ./.room_1/inventory
+			echo "Remember to take your bag with you! Do this by entering the following command:"
+			echo "mv inventory ./.room_1/inventory"
 		fi
 
         done
