@@ -2,9 +2,17 @@
 
 opponent_hp=10
 
+echo "Let's learn how to use the power of water! Enter the following command:"
+echo
 echo "water fire-wall inventory"
+echo "\"water\" is your function. This is how you are first activating the amulet's power."
+echo "\"fire-wall\" is your first argument. This is locking onto your first target with the amulet's first usage."
+echo "\"inventory\" is your second argument. This is how you are accessing the water amulet to use it."
+echo "Good luck!"
 echo""
 
+if test -f $2
+then
  water() {
  if [[ "$1" = "fire-wall" ]]
          then
@@ -19,12 +27,17 @@ echo""
                         else  echo the opponent’s hp is now 0
                         fi
                  else
-                         echo "you can't use water"
+                         echo "You don't have a water-amulet..."
+                         echo "You can't use water!"
                  fi
          else
-                 echo "theres nothing to use water against"
+                 echo "There is nothing to use water against."
  fi
  }
+ else 
+  echo "$2 doesn't seem to be here... did you bring it from the other room?"
+  echo " to return to the other room cd ../."
+ fi
 
 until [ $opponent_hp -le 0 ]
 do
