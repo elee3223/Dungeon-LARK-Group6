@@ -28,6 +28,7 @@ prompt(){
         if [[ "$choice" = *"-amulet" ]]
                 then 
                         $choice $target $bag
+			sleep 1
          elif [[ "$choice" = "potion:healing"* ]]
                 then      
                         echo "the effects of the potion has granted you a full recovery!"
@@ -36,6 +37,7 @@ prompt(){
         elif grep -Fxq $choice "$bag"
                 then
                         deal_dmg-melee
+			sleep 1
                         reg-opp-move
        
         else   
@@ -80,8 +82,10 @@ opp-move() {
         ((my_hp -= attack))
         echo ""
         echo "the boss is attacking"
+	sleep 1
         echo "you got dealt $attack damage!"
         echo ""
+	sleep 1
       
 
 }
