@@ -1,8 +1,17 @@
 #!/bin/bash
 
 echo "locked door. needs special item to unlock.Look through your inventory by putting it as an argument"
-echo ""
-
+echo
+echo "ex: ./locked_door.sh inventory"
+if test -f $2
+then
+	echo ""
+else
+  echo "$2 doesn't seem to be here... did you bring it from the other room?"
+  echo " to return to the other room cd ../."
+  exit 1
+ fi
+ 
 if [ $# -eq 1 ]
 then
 	if [ $(grep "potion" $1 | wc -l) -gt 1 ]
