@@ -4,6 +4,7 @@ opponent_hp=25
 my_hp=50
 target="plant boss"
 
+echo "=============================================="
 echo "The vines are starting to move and come to life... It became a monster!"
 
 read -p "Before we fight lets open up your bag (type inventory): " bag
