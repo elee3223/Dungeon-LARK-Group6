@@ -24,6 +24,7 @@ then
                          declare -a Attack_dmg=(3 4 5 6 7)
                          attack=${Attack_dmg[RANDOM%${#Attack_dmg[@]}]}
                          ((opponent_hp -= attack))
+                         echo ""
                          echo "you dealt $attack damage!"
                         if [ $opponent_hp -gt 0 ]
                                 then echo the opponent’s hp is now $opponent_hp
@@ -55,10 +56,11 @@ do
                                 echo ""
                                 exit 1
                 fi
-                echo "keep fighting"
+                echo "the fire hasn't gone out yet... Keep trying!"
                 echo ""
         else
-                echo "thats the wrong syntax. try again" ""
+                echo "thats the wrong syntax. try again"
+                ech ""
         fi
 
 done
