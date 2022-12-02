@@ -1,5 +1,7 @@
-theres a bunch of potions laying around
-maybe from previous adventurers?
+==============================================
+
+There's a bunch of potions laying around.
+Maybe they're from previous adventurers?
 
 potion:healing
 potion:healing
@@ -8,3 +10,5 @@ potion:healing
 
 Remember, to add to your bag,
 echo "(your item here)" >> inventory
+
+==============================================
