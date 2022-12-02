@@ -1,6 +1,6 @@
 #!/bin/bash
 
-==============================================
+echo "=============================================="
 
 echo "Welcome to the Dungeon! Your adventure is getting started..."
 sleep 2
@@ -33,5 +33,5 @@ printf "\n\nPress any key to continue"
 read -n 1
 
 
-==============================================
+echo "=============================================="
                                
