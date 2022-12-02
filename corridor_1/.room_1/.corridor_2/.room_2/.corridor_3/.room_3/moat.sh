@@ -14,7 +14,7 @@ Good luck!
 ***********"
 tput sgr0
 echo""
-echo "Use the same syntax to overcome this obstacle! Use water-moat as your first argument."
+echo "Use the same syntax to overcome this obstacle! Use water-moat as your first argument, and grass as your function."
 
 opponent_hp=1
 
