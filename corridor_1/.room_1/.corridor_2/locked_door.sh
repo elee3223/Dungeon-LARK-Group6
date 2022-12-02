@@ -19,7 +19,7 @@ then
 				sleep 1
 			else
 				  echo ""
-				echo "the water amulet's power unlocked the door! you can now move onto the next area. Move onto .room_2."
+				echo "the fire amulet's power unlocked the door! you can now move onto the next area. Move onto .room_2."
 				echo ""
 				echo "Remember to take your bag with you! Do this by entering the following command:"
 				echo "mv inventory ./.room_2/inventory"
@@ -37,4 +37,5 @@ elif [ $# -gt 2 ]
 		echo "too many arguments. try again." ""
 	else
 		return
+fi
 fi
