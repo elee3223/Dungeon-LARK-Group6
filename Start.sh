@@ -28,7 +28,7 @@ echo ""
 echo "make sure to bring your backpack with you!"
 echo "HINT: mv inventory corridor_1/inventory"  
 echo ""
-sleep 1
+sleep 2
 printf "\n\nPress any key to continue"
 read -n 1
 
