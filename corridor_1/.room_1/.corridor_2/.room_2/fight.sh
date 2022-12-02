@@ -24,9 +24,11 @@ prompt(){
         if [[ "$choice" = *"-amulet" ]]
                 then 
                         $choice $target $bag
+			sleep 1
         elif grep -Fxq $choice "$bag"
                 then
                         deal_dmg-melee
+			sleep 1
         else   
                 echo "you don't have $weapon in your bag!"
         fi
@@ -59,6 +61,7 @@ opp-move() {
         ((my_hp -= attack))
         echo ""
         echo "the boss is attacking"
+	sleep 1
         echo "you got dealt $attack damage!"
         echo ""
       
@@ -107,6 +110,7 @@ until [ $opponent_hp -le 0 ]
 
         if [ $opponent_hp -gt 0 ]
             then echo the opponent’s hp is now $opponent_hp
+	    sleep 1
                 echo ""
         else  echo the opponent’s hp is now 0
         fi
