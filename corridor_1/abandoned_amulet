@@ -1,3 +1,5 @@
+==============================================
+
 You notice a glimmering amulet on the ground...
 As you pick it up, the sensation of cool waves pound into the palm of your hand and travel throughout your body. 
 You feel relaxed as a still pond, but filled with the energy of a whitewater rapid...
@@ -5,3 +7,5 @@ You feel relaxed as a still pond, but filled with the energy of a whitewater rap
 Add the Water Amulet to your inventory
 
 to add to your inventory, echo "water-amulet" >> inventory
+
+==============================================
