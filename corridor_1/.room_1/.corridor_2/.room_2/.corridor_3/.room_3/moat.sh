@@ -1,13 +1,17 @@
 #!/bin/bash
-
+echo "=============================================="
 echo "recall how you took down the wall of fire..."
 sleep 1
 tput setaf 4
- echo "
- ./fight.sh fire-wall inventory
+ echo " ***********
+ Invoke the power of the water-amulet by calling a function:
+ 
+water fire-wall inventory
 
 \"fire-wall\" is your first argument. This is locking onto your first target with the amulet's first usage.
-\"inventory\" is your second argument. This is how you are accessing the water amulet to use it."
+\"inventory\" is your second argument. This is how you are accessing the water amulet to use it.
+Good luck!
+***********"
 tput sgr0
 echo""
 echo "Use the same syntax to overcome this obstacle! Use water-moat as your first argument."
@@ -49,6 +53,7 @@ do
                                 echo "you invoke the power of the grass amulet. a bridge of vines are summoned"
                                 echo "a path revealed itself... cat .path"
                                 echo ""
+                                echo "=============================================="
                                 exit 1
                 fi
                 echo "keep fighting"
