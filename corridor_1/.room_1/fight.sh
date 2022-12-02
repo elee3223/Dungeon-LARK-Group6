@@ -2,6 +2,17 @@
 
 opponent_hp=10
 
+echo "
+
+Invoke the power of the water-amulet by calling a function:
+
+water fire-wall inventory
+
+\"fire-wall\" is your first argument. This is locking onto your first target with the amulet's first usage.
+\"inventory\" is your second argument. This is how you are accessing the water amulet to use it.
+Good luck!
+
+"
 
 if test -f $2
 then
@@ -39,6 +50,7 @@ do
                 water fire-wall inventory 
                 if [ $opponent_hp -le 0 ]
                         then
+                                echo ""
                                 echo "you put out the wall of fire! proceed to the door. if you can't open it, try using less door"
                                 echo ""
                                 exit 1
