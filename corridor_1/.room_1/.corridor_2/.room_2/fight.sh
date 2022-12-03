@@ -120,6 +120,7 @@ until [ $opponent_hp -le 0 ]
                 echo ""
         else  echo the your hp is now 0
                 echo "you died! Returning to the home menu... "
+		cd ../../../../$PWD
                 
                 exit 1
 
