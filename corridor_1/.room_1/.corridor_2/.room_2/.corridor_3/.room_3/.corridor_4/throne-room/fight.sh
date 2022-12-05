@@ -181,7 +181,7 @@ until [ $opponent_hp -le 0 ]
             then echo your hp is now $my_hp
                 echo ""
         else  echo the your hp is now 0
-                echo "you died! Returning to the home menu... "
+                echo "you died! To restart the fight, run the script again. To exit, cd ../../../../../../. "
                 
                 exit 1
 
