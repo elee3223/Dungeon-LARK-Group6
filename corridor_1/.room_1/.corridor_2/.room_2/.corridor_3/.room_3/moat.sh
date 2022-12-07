@@ -51,7 +51,7 @@ do
                 if [ $opponent_hp -le 0 ]
                         then
                                 echo "you invoke the power of the grass amulet. a bridge of vines are summoned"
-                                echo "a path revealed itself... cat .path"
+                                echo "a path revealed itself... cat .path to reveal your next destination"
                                 echo ""
                                 echo "=============================================="
                                 exit 1
