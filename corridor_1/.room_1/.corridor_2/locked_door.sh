@@ -10,7 +10,7 @@ then
 	if test -f $1 
 	then
 		if [ $(grep "potion" $1 | wc -l) -gt 1 ]
-			then echo "you picked up too many potions, and your backpack might break. remove one with sed -i ''0,/item/{/item/d;}'' inventory"
+			then echo "you picked up too many potions, and your backpack might break. remove one with sed -i ''0,/potion:healing/{/potion:healing/d;}'' inventory"
 			else
 			for i in $(cat ${1})
 			 do
