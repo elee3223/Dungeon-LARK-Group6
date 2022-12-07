@@ -1,6 +1,9 @@
 ==============================================
 
-// explain what utility does
-grep -v "2" pile-of-junk to filter
+There seems to be a pile of trash piled up nearby...
+
+Try using the following command to look through the pile:
+
+grep -v "2" pile-of-junk
 
 ==============================================
